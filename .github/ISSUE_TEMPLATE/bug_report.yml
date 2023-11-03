@@ -3,7 +3,7 @@ description: File a bug report
 labels: ["bug", "triage"]
 projects: ["gitcoinco/grants-stack"]
 assignees:
-  - michellema1208
+  - jesuloluwao
 body:
   - type: markdown
     attributes:
@@ -12,7 +12,7 @@ body:
   - type: input
     id: url
     attributes:
-      label: URL where the problem manifested
+      label: What was the URL where the error occurred? 
       description:
       placeholder: https://example.com
     validations:
@@ -21,36 +21,44 @@ body:
     id: what-happened
     attributes:
       label: What happened?
-      description: 
+      description: If applicable, add screenshots to help explain your problem.
       placeholder: 
-      value: "Page X displayed Y..."
+      value: "Page X displayed Z..."
     validations:
       required: true
   - type: textarea
     id: what-expected
     attributes:
       label: What should have happened instead?
-      description: 
+      description: A clear and concise description of what you expected the system to do.
       placeholder: 
-      value: "Page X displays Z"
+      value: "Page X should display Y"
     validations:
       required: true
-  - type: textarea
+  - type: textarea 
     id: repro
     attributes:
-      label: How can the issues be reproduced?
-      description: Issues that developers can reproduce are quicker to resolve
-      placeholder: "1. go to page https://example.com/abc/123\n2. connect wallet\n3. click on button ABC"
+      label: Steps to Reproduce
+      description: Issues that developers can reproduce are quicker to resolve 
+      placeholder: "1. Go to '...'\n2. Click on '....'\n3. Scroll down to '....'\n4. See error"
+    validations:
+      required: true
   - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What browser(s) are you seeing the problem on?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
+  - type: input
+    id: chain
+    attributes:
+      label: What chain(s) did the error occur on? 
+      description:
+      placeholder: i.e. Optimism, PGN, etc. 
   - type: textarea
     id: logs
     attributes:
