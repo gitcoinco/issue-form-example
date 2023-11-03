@@ -35,6 +35,12 @@ body:
       value: "Page X displays Z"
     validations:
       required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: How can the issues be reproduced?
+      description: Issues that developers can reproduce are quicker to resolve
+      placeholder: "1. go to page https://example.com/abc/123\n2. connect wallet\n3. click on button ABC"
   - type: dropdown
     id: browsers
     attributes:
