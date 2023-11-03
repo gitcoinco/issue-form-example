@@ -30,7 +30,7 @@ body:
   - type: textarea
     id: what-expected
     attributes:
-      label: What should have happened insead?
+      label: What should have happened instead?
       description: 
       placeholder: 
       value: "Page X displays Z"
