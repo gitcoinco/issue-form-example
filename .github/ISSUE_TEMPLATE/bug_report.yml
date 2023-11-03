@@ -10,7 +10,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-  - type: url
+  - type: input
     id: url
     attributes:
       label: URL where the problem manifested
